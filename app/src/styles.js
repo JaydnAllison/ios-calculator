@@ -46,10 +46,10 @@ const styles = StyleSheet.create({
     },
 
     normalButtonText: {
+        width: '100%',
         color: 'white',
         textAlign: 'center',
         fontSize: 40,
-        width: 30,
     },
 
     operandContainer: {
