@@ -30,6 +30,10 @@ export default function Index() {
         setOperand(prevOperand => (Number(prevOperand) * -1).toString());
     }
 
+    function percentage() {
+        setOperand(prevOperand => (+prevOperand / 100).toString());
+    }
+
     function evaluate() {
         if (state) {
             let answer = 'Something went wrong';
@@ -73,7 +77,7 @@ export default function Index() {
                 <View style={styles.buttonsContainer}>
                     <NormalButton type='actionButton' onPressOverride={clear}>AC</NormalButton>
                     <NormalButton type='actionButton' onPressOverride={switchSign}>+/-</NormalButton>
-                    <NormalButton type='actionButton'>%</NormalButton>
+                    <NormalButton type='actionButton' onPressOverride={percentage}>%</NormalButton>
                     <NormalButton type='operatorButton' operatorType={States.DIVIDE}>÷</NormalButton>
 
                     <NormalButton>7</NormalButton>
