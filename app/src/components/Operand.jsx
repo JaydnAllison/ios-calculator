@@ -1,4 +1,4 @@
-import { View, Text } from "react-native";
+import { View, Text, ScrollView } from "react-native";
 import styles from "../styles";
 import { useContext } from "react";
 import { OperandContext } from "../../index.jsx";

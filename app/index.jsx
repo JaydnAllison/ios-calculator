@@ -62,9 +62,7 @@ export default function Index() {
         <OperandContext.Provider value={{operand, setOperand, prevOperand, setPrevOperand, state, setState}}>
             <View style={styles.mainContainer}>
                 <Stack.Screen options={{
-                    headerBackTitleVisible: false,
-                    headerShadowVisible: false,
-                    headerTitle: 'Calculator',
+                    headerShown: false,
                 }}>
                 </Stack.Screen>
                 
